@@ -47,7 +47,7 @@ Plug 'Shougo/neoyank.vim'
 Plug 'Shougo/unite-outline'
 Plug 'Shougo/unite-session'
 Plug 'Shougo/neomru.vim'
-Plug 'Shougo/vimfiler.vim'
+Plug 'Shougo/vimfiler.vim', { 'commit': '730d41f6ebe19422cb385c64833976fcc84a66d6' }
 Plug 'airblade/vim-gitgutter'
 Plug 'fugitive.vim'
 Plug 'gregsexton/gitv'
