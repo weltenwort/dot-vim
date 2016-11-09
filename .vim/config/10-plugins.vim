@@ -33,6 +33,7 @@ Plug 'tpope/vim-vinegar'
 
 " Syntax: Common
 Plug 'Valloric/YouCompleteMe', { 'do': './install.sh' }
+Plug 'junegunn/vim-easy-align'
 Plug 'raimondi/delimitmate'
 Plug 'scrooloose/syntastic'
 Plug 'tpope/vim-commentary'
