@@ -13,6 +13,7 @@ nnoremap <leader>* :nohl<cr>
 nnoremap <leader>f :Files<cr>
 nnoremap <leader>F :Files %:p:h<cr>
 nnoremap <leader>g :GFiles<cr>
+nnoremap <leader>G :GFiles?<cr>
 
 " Buffers
 nnoremap + :Buffers<cr>
@@ -36,3 +37,11 @@ nnoremap <Leader>vl :VimuxRunLastCommand<cr>
 nnoremap <Leader>vq :VimuxCloseRunner<cr>
 nnoremap <Leader>vz :VimuxZoomRunner<cr>
 vnoremap <LocalLeader>vs "vy :call VimuxSlime()<cr>"
+
+" Tern
+nnoremap <leader>td :TernDef<cr>
+nnoremap <leader>tr :TernRefs<cr>
+nnoremap <leader>tt :TernType<cr>
+nnoremap <leader>tn :TernRename<cr>
+nnoremap <leader>tb :TernDoc<cr>
+nnoremap <leader>tB :TernDocBrowse<cr>
