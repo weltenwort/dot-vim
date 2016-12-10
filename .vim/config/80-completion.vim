@@ -10,4 +10,6 @@ let g:UltiSnipsJumpBackwardTrigger = "<c-x><c-p>"
 
 augroup custom_completion
   au InsertLeave,CompleteDone * if pumvisible() == 0 | pclose | endif
+  au FileType javascript UltiSnipsAddFiletypes javascript-jsdoc
+  au FileType javascript UltiSnipsAddFiletypes javascript-angular
 augroup END
