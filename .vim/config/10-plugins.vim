@@ -17,7 +17,7 @@ Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 
 " Files
-Plug 'dominickng/fzf-session'
+" Plug 'dominickng/fzf-session'
 Plug 'Shougo/vimproc.vim', { 'do': 'make' }
 Plug 'airblade/vim-gitgutter'
 Plug 'dbakker/vim-projectroot'
@@ -32,7 +32,7 @@ Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-vinegar'
 
 " Syntax: Common
-Plug 'Valloric/YouCompleteMe', { 'do': './install.sh' }
+Plug 'Valloric/YouCompleteMe', { 'do': './install.py --tern-completer' }
 Plug 'junegunn/vim-easy-align'
 Plug 'raimondi/delimitmate'
 Plug 'scrooloose/syntastic'
@@ -44,11 +44,15 @@ Plug 'tpope/vim-surround'
 Plug 'pangloss/vim-javascript'
 Plug 'ternjs/tern_for_vim', { 'do': 'npm install' }
 
+" Syntax: Ansible
+Plug 'pearofducks/ansible-vim'
+
 " Motion
-Plug 'easymotion/vim-easymotion'
+" Plug 'easymotion/vim-easymotion'
 Plug 'haya14busa/incsearch.vim'
-Plug 'haya14busa/vim-easyoperator-line'
-Plug 'haya14busa/vim-easyoperator-phrase'
+" Plug 'haya14busa/vim-easyoperator-line'
+" Plug 'haya14busa/vim-easyoperator-phrase'
+Plug 'justinmk/vim-sneak'
 Plug 'textobj-indent'
 Plug 'textobj-user'
 Plug 'tpope/vim-repeat'
