@@ -25,6 +25,7 @@ Plug 'gregsexton/gitv'
 Plug 'jreybert/vimagit'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --bin' }
 Plug 'junegunn/fzf.vim'
+Plug 'mbbill/undotree'
 Plug 'pelodelfuego/vim-swoop'
 Plug 'sjl/splice.vim'
 Plug 'tpope/vim-eunuch'
