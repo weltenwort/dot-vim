@@ -14,6 +14,8 @@ nnoremap <leader>* :nohl<cr>
 " Files
 nnoremap <leader>f :Files<cr>
 nnoremap <leader>F :Files %:p:h<cr>
+nnoremap <expr> <leader>r ':Files '.projectroot#guess().'<cr>'
+nnoremap <leader>R :ProjectRootCD<cr>
 nnoremap <leader>g :GFiles<cr>
 nnoremap <leader>G :GFiles?<cr>
 
