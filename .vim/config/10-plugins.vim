@@ -48,6 +48,9 @@ Plug 'ternjs/tern_for_vim', { 'do': 'npm install' }
 " Syntax: Ansible
 Plug 'pearofducks/ansible-vim'
 
+" Syntax: Beancount
+Plug 'nathangrigg/vim-beancount'
+
 " Motion
 " Plug 'easymotion/vim-easymotion'
 Plug 'haya14busa/incsearch.vim'
