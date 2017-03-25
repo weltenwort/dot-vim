@@ -51,6 +51,9 @@ Plug 'pearofducks/ansible-vim'
 " Syntax: Beancount
 Plug 'nathangrigg/vim-beancount'
 
+" Syntax: Notes
+Plug 'vimwiki/vimwiki'
+
 " Motion
 " Plug 'easymotion/vim-easymotion'
 Plug 'haya14busa/incsearch.vim'
