@@ -40,6 +40,7 @@ nnoremap <Leader>vi :VimuxInspectRunner<cr>
 nnoremap <Leader>vl :VimuxRunLastCommand<cr>
 nnoremap <Leader>vq :VimuxCloseRunner<cr>
 nnoremap <Leader>vz :VimuxZoomRunner<cr>
+nnoremap <Leader>vc :call VimuxRunCommand('cd ' . expand('%:p:h'))<cr>
 vnoremap <LocalLeader>vs "vy :call VimuxSlime()<cr>"
 
 " Tern
