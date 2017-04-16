@@ -29,3 +29,8 @@ augroup custom_node_modules
     autocmd!
     autocmd FileType javascript call SetSyntasticJavascriptExecs()
 augroup END
+
+augroup custom_autoformat
+    autocmd!
+    autocmd FileType markdown set formatoptions=tcqjnw
+augroup END
