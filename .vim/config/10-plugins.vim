@@ -43,7 +43,8 @@ Plug 'tpope/vim-surround'
 
 " Syntax: JavaScript
 Plug 'pangloss/vim-javascript'
-Plug 'ternjs/tern_for_vim', { 'do': 'npm install' }
+" Plug 'ternjs/tern_for_vim', { 'do': 'npm install' }
+" Plug 'Quramy/tsuquyomi'
 
 " Syntax: Ansible
 Plug 'pearofducks/ansible-vim'
@@ -54,16 +55,17 @@ Plug 'nathangrigg/vim-beancount'
 " Syntax: Notes
 Plug 'vimwiki/vimwiki'
 
+" Syntax: Tmux
+Plug 'tmux-plugins/vim-tmux'
+
 " Motion
-" Plug 'easymotion/vim-easymotion'
+Plug 'gcmt/wildfire.vim'
 Plug 'haya14busa/incsearch.vim'
-" Plug 'haya14busa/vim-easyoperator-line'
-" Plug 'haya14busa/vim-easyoperator-phrase'
 Plug 'justinmk/vim-sneak'
-Plug 'textobj-indent'
-Plug 'textobj-user'
+Plug 'michaeljsmith/vim-indent-object'
 Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-unimpaired'
+Plug 'wellle/targets.vim'
 
 " Snippets
 Plug 'SirVer/ultisnips'

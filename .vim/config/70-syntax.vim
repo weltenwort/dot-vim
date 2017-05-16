@@ -1,10 +1,16 @@
 let g:EditorConfig_exclude_patterns = ['fugitive://.*', 'scp://.*']
 
+let g:tsuquyomi_disable_quickfix = 1
+let g:tsuquyomi_javascript_support = 1
+let g:tsuquyomi_single_quote_import = 1
+
 let g:syntastic_mode_map = { 'mode': 'active',
             \ 'active_filetypes': ['coffee', 'css', 'javascript', 'python'],
             \ 'passive_filetypes': ['tex'] }
+let g:syntastic_typescript_checkers = ['tsuquyomi']
 let g:syntastic_javascript_checkers = ['eslint']
 let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_aggregate_errors = 1
 
 function! FindLocalPath(path)
     let l:local_path = findfile(a:path, '.;')
@@ -23,6 +29,11 @@ function! SetSyntasticJavascriptExecs()
     if executable(local_eslint)
         let b:syntastic_javascript_eslint_exec = local_eslint
     endif
+
+    let local_flow = FindLocalPath('node_modules/.bin/flow')
+    if executable(local_flow)
+        let b:syntastic_javascript_flow_exec = local_flow
+    endif
 endfunction
 
 augroup custom_node_modules
@@ -33,4 +44,5 @@ augroup END
 augroup custom_autoformat
     autocmd!
     autocmd FileType markdown set formatoptions=tcqjnw
+    autocmd FileType javascript.jsx,javascript setlocal formatprg=prettier\ --stdin\ --single-quote\ --trailing-comma\ all\ --print-width=120
 augroup END

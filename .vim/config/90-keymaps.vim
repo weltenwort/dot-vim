@@ -29,6 +29,7 @@ nnoremap <Leader>q :Bdelete<cr>
 " Other
 nnoremap <F11> :set invpaste paste?<cr>
 set pastetoggle=<F11>
+nnoremap <leader>af gggqG``
 
 " Tmux
 function! VimuxSlime()
