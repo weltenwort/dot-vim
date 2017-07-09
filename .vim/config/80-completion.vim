@@ -17,4 +17,6 @@ augroup custom_completion
   au InsertLeave,CompleteDone * if pumvisible() == 0 | pclose | endif
   au FileType javascript UltiSnipsAddFiletypes javascript-jsdoc
   au FileType javascript UltiSnipsAddFiletypes javascript-angular
+  au FileType javascript UltiSnipsAddFiletypes javascript.es6.react
+  au FileType javascript UltiSnipsAddFiletypes javascript-react
 augroup END

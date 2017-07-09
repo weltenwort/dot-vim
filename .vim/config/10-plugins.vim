@@ -30,19 +30,23 @@ Plug 'pelodelfuego/vim-swoop'
 Plug 'sjl/splice.vim'
 Plug 'tpope/vim-eunuch'
 Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-rhubarb'
 Plug 'tpope/vim-vinegar'
+Plug 'wincent/ferret'
 
 " Syntax: Common
 Plug 'Valloric/YouCompleteMe', { 'do': './install.py --tern-completer' }
 Plug 'junegunn/vim-easy-align'
 Plug 'raimondi/delimitmate'
-Plug 'scrooloose/syntastic'
+" Plug 'scrooloose/syntastic'
+Plug 'w0rp/ale'
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-sleuth'
 Plug 'tpope/vim-surround'
 
 " Syntax: JavaScript
 Plug 'pangloss/vim-javascript'
+Plug 'mxw/vim-jsx'
 " Plug 'ternjs/tern_for_vim', { 'do': 'npm install' }
 " Plug 'Quramy/tsuquyomi'
 

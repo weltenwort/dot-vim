@@ -4,6 +4,8 @@ let g:tsuquyomi_disable_quickfix = 1
 let g:tsuquyomi_javascript_support = 1
 let g:tsuquyomi_single_quote_import = 1
 
+let g:jsx_ext_required = 0
+
 let g:syntastic_mode_map = { 'mode': 'active',
             \ 'active_filetypes': ['coffee', 'css', 'javascript', 'python'],
             \ 'passive_filetypes': ['tex'] }
@@ -11,6 +13,10 @@ let g:syntastic_typescript_checkers = ['tsuquyomi']
 let g:syntastic_javascript_checkers = ['eslint']
 let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_aggregate_errors = 1
+
+let g:ale_fixers = {
+    \ 'javascript': ['eslint']
+    \ }
 
 function! FindLocalPath(path)
     let l:local_path = findfile(a:path, '.;')
