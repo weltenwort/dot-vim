@@ -56,8 +56,9 @@ Plug 'pearofducks/ansible-vim'
 " Syntax: Beancount
 Plug 'nathangrigg/vim-beancount'
 
-" Syntax: Notes
+" Syntax: Notes and Tasks
 Plug 'vimwiki/vimwiki'
+Plug 'blindFS/vim-taskwarrior'
 
 " Syntax: Tmux
 Plug 'tmux-plugins/vim-tmux'
