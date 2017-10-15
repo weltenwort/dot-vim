@@ -14,6 +14,9 @@ let g:syntastic_javascript_checkers = ['eslint']
 let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_aggregate_errors = 1
 
+let g:ale_linters = {
+    \ 'typescript': ['tslint']
+    \ }
 let g:ale_fixers = {
     \ 'javascript': ['eslint']
     \ }
@@ -51,4 +54,5 @@ augroup custom_autoformat
     autocmd!
     autocmd FileType markdown set formatoptions=tcqjnw
     autocmd FileType javascript.jsx,javascript setlocal formatprg=prettier\ --stdin\ --single-quote\ --trailing-comma\ all\ --print-width=120
+    autocmd BufNewFile,BufRead *.tsx set filetype=typescript.jsx
 augroup END
