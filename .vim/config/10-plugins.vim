@@ -39,6 +39,7 @@ Plug 'wincent/ferret'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'zeero/vim-ctrlp-help'
 Plug 'jasoncodes/ctrlp-modified.vim'
+Plug 'DavidEGx/ctrlp-smarttabs'
 
 " HTTP Requests
 Plug 'diepm/vim-rest-console'
@@ -63,6 +64,9 @@ Plug 'peitalin/vim-jsx-typescript'
 " Plug 'ternjs/tern_for_vim', { 'do': 'npm install' }
 " Plug 'Quramy/tsuquyomi'
 
+" Syntax: ReasonML
+Plug 'reasonml-editor/vim-reason'
+
 " Syntax: Ansible
 Plug 'pearofducks/ansible-vim'
 Plug 'phenomenes/ansible-snippets'
@@ -80,7 +84,9 @@ Plug 'tmux-plugins/vim-tmux'
 
 " Motion
 Plug 'gcmt/wildfire.vim'
-Plug 'haya14busa/incsearch.vim'
+" Plug 'haya14busa/incsearch.vim'
+Plug 'haya14busa/is.vim'
+Plug 'haya14busa/vim-asterisk'
 Plug 'justinmk/vim-sneak'
 Plug 'michaeljsmith/vim-indent-object'
 Plug 'tpope/vim-repeat'

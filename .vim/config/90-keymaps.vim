@@ -10,10 +10,14 @@ map f <Plug>Sneak_f
 map F <Plug>Sneak_F
 map t <Plug>Sneak_t
 map T <Plug>Sneak_T
-map /  <Plug>(incsearch-forward)
-map ?  <Plug>(incsearch-backward)
-map g/ <Plug>(incsearch-stay)
+" map /  <Plug>(incsearch-forward)
+" map ?  <Plug>(incsearch-backward)
+" map g/ <Plug>(incsearch-stay)
 nnoremap <leader>* :nohl<cr>
+map *  <Plug>(asterisk-z*)<Plug>(is-nohl-1)
+map g* <Plug>(asterisk-gz*)<Plug>(is-nohl-1)
+map #  <Plug>(asterisk-z#)<Plug>(is-nohl-1)
+map g# <Plug>(asterisk-gz#)<Plug>(is-nohl-1)
 
 " Files
 nnoremap <leader>f :CtrlP<cr>
@@ -26,6 +30,7 @@ nnoremap <leader>R :ProjectRootCD<cr>
 nnoremap <leader>m :CtrlPModified<cr>
 " nnoremap <leader>g :GFiles<cr>
 " nnoremap <leader>G :GFiles?<cr>
+nnoremap <leader>t :CtrlPSmartTabs<cr>
 
 " Buffers
 nnoremap + :CtrlPBuffer<cr>
