@@ -31,6 +31,8 @@ nnoremap <leader>m :CtrlPModified<cr>
 " nnoremap <leader>g :GFiles<cr>
 " nnoremap <leader>G :GFiles?<cr>
 nnoremap <leader>t :CtrlPSmartTabs<cr>
+nnoremap - :Ranger<CR>
+nnoremap _ :RangerNewTab<CR>
 
 " Buffers
 nnoremap + :CtrlPBuffer<cr>

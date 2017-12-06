@@ -5,6 +5,7 @@ let g:ctrlp_extensions = [
   \ ]
 let g:ctrlp_match_window = 'results:100,min:10,max:10'
 
+let g:ranger_map_keys = 0
 
 if executable("ag")
   set grepprg=ag\ --nogroup\ --nocolor
