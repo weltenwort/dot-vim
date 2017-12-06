@@ -40,6 +40,7 @@ Plug 'wincent/ferret'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'zeero/vim-ctrlp-help'
 Plug 'jasoncodes/ctrlp-modified.vim'
+Plug 'FelikZ/ctrlp-py-matcher'
 Plug 'DavidEGx/ctrlp-smarttabs'
 Plug 'francoiscabrol/ranger.vim'
 

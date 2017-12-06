@@ -4,6 +4,7 @@ let g:ctrlp_extensions = [
   \ 'undo', 'line', 'changes', 'help', 'modified'
   \ ]
 let g:ctrlp_match_window = 'results:100,min:10,max:10'
+let g:ctrlp_match_func = { 'match': 'pymatcher#PyMatch' }
 
 let g:ranger_map_keys = 0
 
