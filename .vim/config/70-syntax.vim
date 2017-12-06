@@ -20,8 +20,12 @@ let g:ale_linters = {
     \ 'typescript': ['tslint']
     \ }
 let g:ale_fixers = {
-    \ 'javascript': ['eslint']
+    \ 'css': ['prettier'],
+    \ 'javascript': ['prettier'],
+    \ 'typescript': ['prettier']
     \ }
+let g:ale_javascript_prettier_options = '--single-quote'
+let g:ale_javascript_prettier_use_local_config = 1
 
 function! FindLocalPath(path)
     let l:local_path = findfile(a:path, '.;')
