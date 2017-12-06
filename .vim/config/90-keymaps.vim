@@ -38,7 +38,6 @@ nnoremap <leader>b :CtrlPBuffer<cr>
 " nnoremap + :Buffers<cr>
 " nnoremap <leader>b :Buffers<cr>
 nnoremap <bs><bs> :b#<cr>
-nnoremap <leader>cc :pclose<cr>
 nnoremap <Leader>q :Bdelete<cr>
 
 " Other
@@ -75,9 +74,15 @@ nnoremap <leader>ct :YcmCompleter GetType<cr>
 nnoremap <leader>cT :YcmCompleter GoToType<cr>
 nnoremap <leader>cr :YcmCompleter RefactorRename 
 nnoremap <leader>cR :YcmCompleter GoToReferences<cr>
+nnoremap <leader>cl :YcmDiags<cr>
 
 " Vimwiki
 nnoremap <leader>wf :VimwikiFollowLink<cr>
 
 " Rest Console
 nnoremap <leader><cr> :call VrcQuery()<cr>
+
+" Syntax
+nmap <leader># <Plug>(ale_fix)
+nmap <leader>ll <Plug>qf_loc_toggle
+nmap <leader>cc <Plug>qf_qf_toggle

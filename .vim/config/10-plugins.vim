@@ -16,6 +16,7 @@ Plug 'mhinz/vim-startify'
 Plug 'moll/vim-bbye'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
+Plug 'romainl/vim-qf'
 
 " Files
 " Plug 'dominickng/fzf-session'
