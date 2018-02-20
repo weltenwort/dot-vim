@@ -101,4 +101,7 @@ Plug 'wellle/targets.vim'
 Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
 
+" Fonts
+Plug 'ryanoasis/vim-devicons' " must be loaded after most of the others
+
 call plug#end()
