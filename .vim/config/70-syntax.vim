@@ -22,10 +22,12 @@ let g:ale_linters = {
 let g:ale_fixers = {
     \ 'css': ['prettier'],
     \ 'javascript': ['prettier'],
-    \ 'typescript': ['prettier']
+    \ 'typescript': ['prettier'],
+    \ 'sh': ['shfmt']
     \ }
-let g:ale_javascript_prettier_options = '--single-quote'
+let g:ale_javascript_prettier_options = '--single-quote --trailing-comma es5'
 let g:ale_javascript_prettier_use_local_config = 1
+let g:ale_sh_shfmt_options = '-i 2'
 
 function! FindLocalPath(path)
     let l:local_path = findfile(a:path, '.;')
