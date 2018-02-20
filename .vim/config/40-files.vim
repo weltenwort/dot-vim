@@ -5,6 +5,9 @@ let g:ctrlp_extensions = [
   \ ]
 let g:ctrlp_match_window = 'results:100,min:10,max:10'
 let g:ctrlp_match_func = { 'match': 'pymatcher#PyMatch' }
+let g:ctrlp_open_multiple_files = 'ij'
+let g:ctrlp_working_path_mode = 'rc'
+let g:ctrlp_open_new_file = 'r'
 
 let g:ranger_map_keys = 0
 

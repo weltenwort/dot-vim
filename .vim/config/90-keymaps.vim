@@ -25,7 +25,6 @@ nnoremap <leader>F :CtrlPCurFile<cr>
 " nnoremap <leader>f :Files<cr>
 " nnoremap <leader>F :Files %:p:h<cr>
 " nnoremap <expr> <leader>r ':Files '.projectroot#guess().'<cr>'
-nnoremap <leader>r :CtrlPRoot<cr>
 nnoremap <leader>R :ProjectRootCD<cr>
 nnoremap <leader>m :CtrlPModified<cr>
 " nnoremap <leader>g :GFiles<cr>
