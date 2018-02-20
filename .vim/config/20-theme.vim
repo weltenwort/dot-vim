@@ -11,8 +11,15 @@ let g:airline#extensions#tabline#show_buffers = 1
 
 set ignorecase
 set list
-set number
+set number relativenumber
 set splitbelow
 
 let g:splice_initial_diff_grid = 1
 let g:splice_initial_layout_grid = 1
+
+
+augroup numbertoggle
+  autocmd!
+  autocmd BufEnter,FocusGained,InsertLeave * set relativenumber
+  autocmd BufLeave,FocusLost,InsertEnter   * set norelativenumber
+augroup END
