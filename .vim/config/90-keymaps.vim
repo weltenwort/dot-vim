@@ -73,7 +73,7 @@ nnoremap <leader>cd :YcmCompleter GetDoc<cr>
 nnoremap <leader>cD :YcmCompleter GoToDefinition<cr>
 nnoremap <leader>ct :YcmCompleter GetType<cr>
 nnoremap <leader>cT :YcmCompleter GoToType<cr>
-nnoremap <leader>cr :YcmCompleter RefactorRename 
+nnoremap <leader>cr :YcmCompleter RefactorRename <c-r><c-w>
 nnoremap <leader>cR :YcmCompleter GoToReferences<cr>
 nnoremap <leader>cl :YcmDiags<cr>
 

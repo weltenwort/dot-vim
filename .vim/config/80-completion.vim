@@ -13,9 +13,10 @@ let g:ycm_autoclose_preview_window_after_insertion = 1
 " let g:SuperTabDefaultCompletionType = '<C-n>'
  
 " better key bindings for UltiSnipsExpandTrigger
-let g:UltiSnipsExpandTrigger="<c-x>"
+let g:UltiSnipsExpandTrigger="<c-x><c-x>"
 let g:UltiSnipsJumpForwardTrigger="<tab>"
 let g:UltiSnipsJumpBackwardTrigger="<c-tab>"
+" let g:UltiSnipsSnippetDirectories=["UltiSnips", "mycoolsnippets"]
 
 " let g:ycm_filetype_specific_completion_to_disable = {
 " \   'javascript': 1,
