@@ -21,6 +21,7 @@ let g:ale_linters = {
     \ }
 let g:ale_fixers = {
     \ 'css': ['prettier'],
+    \ 'scss': ['prettier'],
     \ 'javascript': ['prettier'],
     \ 'typescript': ['prettier'],
     \ 'sh': ['shfmt']
