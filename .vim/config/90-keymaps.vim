@@ -46,6 +46,7 @@ nnoremap <F11> :set invpaste paste?<cr>
 set pastetoggle=<F11>
 nnoremap <leader>af gggqG``
 nnoremap <leader>h :CtrlPHelp<cr>
+nnoremap <expr> gp '`[' . strpart(getregtype(), 0, 1) . '`]'
 
 " Tmux
 function! VimuxSlime()
