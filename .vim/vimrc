@@ -1,0 +1,57 @@
+" vim: set foldmethod=marker foldlevel=1:
+
+" Caches {{{
+set backupcopy=yes
+
+if isdirectory(expand('~/.cache/vim'))
+  if &directory =~# '^\.,'
+    set directory^=~/.cache/vim/swap//
+  endif
+  if &backupdir =~# '^\.,'
+    set backupdir^=~/.cache/vim/backup//
+  endif
+  if exists('+undodir') && &undodir =~# '^\.\%(,\|$\)'
+    set undodir^=~/.cache/vim/undo//
+  endif
+endif
+
+if exists('+undofile')
+  set undofile
+endif
+" }}}
+
+" Mappings {{{
+let mapleader = "\<Space>"
+let maplocalleader = ';'
+set timeoutlen=1000
+set ttimeoutlen=0
+" }}}
+
+" Display {{{
+set ignorecase
+set list
+set number relativenumber
+set splitbelow
+
+augroup numbertoggle
+  autocmd!
+  autocmd BufEnter,FocusGained,InsertLeave * set relativenumber
+  autocmd BufLeave,FocusLost,InsertEnter   * set norelativenumber
+augroup END
+" }}}
+
+let s:init_directory = fnamemodify($MYVIMRC, ':p:h')
+let s:config_directory = s:init_directory . '/plug.d'
+let s:config_fragment_files = sort(globpath(s:config_directory, '*.vim', 0, 1))
+
+" VimPlug Plugins {{{
+call plug#begin('~/.vim/plugged')
+
+for config_fragment_file in s:config_fragment_files
+  execute 'source ' . config_fragment_file
+endfor
+
+call plug#end()
+" }}}
+
+doautocmd User PlugInit

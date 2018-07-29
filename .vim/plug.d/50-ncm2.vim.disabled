@@ -1,0 +1,32 @@
+Plug 'roxma/vim-hug-neovim-rpc'
+Plug 'roxma/nvim-yarp'
+Plug 'Shougo/neco-vim'
+Plug 'ncm2/ncm2'
+Plug 'ncm2/ncm2-path'
+Plug 'ncm2/ncm2-bufword'
+Plug 'ncm2/ncm2-cssomni'
+Plug 'ncm2/ncm2-jedi'
+Plug 'jsfaint/ncm2-vim'
+
+function s:InitPlugin()
+  " from the README:
+  " note that you must keep `noinsert` in completeopt, you must not use
+  " `longest`. The others are optional. Read `:help completeopt` for
+  " more info
+  set completeopt=noinsert,menuone,noselect
+
+  " When the <Enter> key is pressed while the popup menu is visible, it only
+  " hides the menu. Use this mapping to close the menu and also start a new
+  " line.
+  inoremap <expr> <CR> (pumvisible() ? "\<c-y>\<cr>" : "\<CR>")
+
+  " Use <TAB> to select the popup menu:
+  inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
+  inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
+endfunction
+
+augroup PlugNcm2
+  autocmd!
+  autocmd BufEnter * call ncm2#enable_for_buffer()
+  autocmd User PlugInit :call s:InitPlugin()
+augroup END

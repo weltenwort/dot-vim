@@ -1,0 +1,16 @@
+Plug 'autozimu/LanguageClient-neovim', {
+    \ 'branch': 'next',
+    \ 'do': 'bash install.sh',
+    \ }
+
+function s:InitPlugin()
+  set hidden
+  let g:LanguageClient_serverCommands = {
+    \ 'typescript': ['typescript-language-server', '--stdio'],
+    \ }
+endfunction
+
+augroup PlugLanguageClient
+  autocmd!
+  autocmd User PlugInit :call s:InitPlugin()
+augroup END

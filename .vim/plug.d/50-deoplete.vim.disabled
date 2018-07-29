@@ -1,0 +1,16 @@
+if has('nvim')
+  Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+else
+  Plug 'Shougo/deoplete.nvim'
+  Plug 'roxma/nvim-yarp'
+  Plug 'roxma/vim-hug-neovim-rpc'
+endif
+
+function s:InitPlugin()
+  let g:deoplete#enable_at_startup = 1
+endfunction
+
+augroup PlugDeoplete
+  autocmd!
+  autocmd User PlugInit :call s:InitPlugin()
+augroup END
