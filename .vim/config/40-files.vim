@@ -11,6 +11,9 @@ let g:ctrlp_open_new_file = 'r'
 
 let g:ranger_map_keys = 0
 
+let g:localvimrc_persistence_file = expand('~/.vim/localvimrc_whitelist')
+let g:localvimrc_persistent = 1  "store if answered in uppercase
+
 if executable("ag")
   set grepprg=ag\ --nogroup\ --nocolor
   let g:ctrlp_user_command = 'ag %s -i -l --nocolor --nogroup --ignore ''.git'' --ignore ''node_modules'' --hidden -g ""'

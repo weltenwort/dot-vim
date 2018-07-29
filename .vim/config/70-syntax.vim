@@ -17,18 +17,24 @@ let g:syntastic_aggregate_errors = 1
 let g:qf_mapping_ack_style = 1
 
 let g:ale_linters = {
-    \ 'typescript': ['tslint']
+    \ 'typescript': ['tslint', 'prettier'],
+    \ 'javascript': ['eslint', 'prettier'],
     \ }
 let g:ale_fixers = {
     \ 'css': ['prettier'],
     \ 'scss': ['prettier'],
-    \ 'javascript': ['prettier'],
-    \ 'typescript': ['prettier'],
+    \ 'javascript': ['eslint', 'prettier'],
+    \ 'json': ['prettier'],
+    \ 'typescript': ['tslint'],
     \ 'sh': ['shfmt']
     \ }
-let g:ale_javascript_prettier_options = '--single-quote --trailing-comma es5'
-let g:ale_javascript_prettier_use_local_config = 1
+" let g:ale_javascript_prettier_options = '--single-quote --trailing-comma es5'
+" let g:ale_typescript_prettier_options = '--single-quote --trailing-comma es5'
 let g:ale_sh_shfmt_options = '-i 2'
+
+let g:zv_file_types = {
+    \ 'typescript': 'javascript'
+    \ }
 
 function! FindLocalPath(path)
     let l:local_path = findfile(a:path, '.;')

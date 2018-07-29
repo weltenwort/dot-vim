@@ -76,6 +76,8 @@ nnoremap <leader>ct :YcmCompleter GetType<cr>
 nnoremap <leader>cT :YcmCompleter GoToType<cr>
 nnoremap <leader>cr :YcmCompleter RefactorRename <c-r><c-w>
 nnoremap <leader>cR :YcmCompleter GoToReferences<cr>
+nnoremap <leader>ci :YcmCompleter OrganizeImports<cr>
+nnoremap <leader>cf :YcmCompleter FixIt<cr>
 nnoremap <leader>cl :YcmDiags<cr>
 
 " Vimwiki
@@ -86,5 +88,13 @@ nnoremap <leader><cr> :call VrcQuery()<cr>
 
 " Syntax
 nmap <leader># <Plug>(ale_fix)
-nmap <leader>ll <Plug>qf_loc_toggle
-nmap <leader>cc <Plug>qf_qf_toggle
+nmap <leader>ll <Plug>(qf_loc_toggle_stay)
+nmap <leader>lL <Plug>(qf_loc_toggle)
+nmap <leader>ln <Plug>(qf_loc_next)
+nmap <leader>lp <Plug>(qf_loc_previous)
+nmap <leader>lw <Plug>(qf_qf_switch)
+nmap <leader>cc <Plug>(qf_qf_toggle_stay)
+nmap <leader>cC <Plug>(qf_qf_toggle)
+nmap <leader>cn <Plug>(qf_qf_next)
+nmap <leader>cp <Plug>(qf_qf_previous)
+nmap <leader>cw <Plug>(qf_qf_switch)

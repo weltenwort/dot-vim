@@ -6,10 +6,12 @@ Plug 'tpope/vim-sensible'
 if !has('nvim')
   Plug 'noahfrederick/vim-neovim-defaults'
 endif
+Plug 'embear/vim-localvimrc'
 
 " Layout, Theme
 Plug 'benmills/vimux'
 Plug 'chriskempson/base16-vim'
+Plug 'dylanaraps/wal.vim'
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'junegunn/vim-peekaboo'
 Plug 'majutsushi/tagbar'
@@ -17,6 +19,7 @@ Plug 'mhinz/vim-startify'
 Plug 'moll/vim-bbye'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
+Plug 'edkolev/tmuxline.vim'
 Plug 'romainl/vim-qf'
 
 " Files
@@ -44,6 +47,7 @@ Plug 'jasoncodes/ctrlp-modified.vim'
 Plug 'FelikZ/ctrlp-py-matcher'
 Plug 'DavidEGx/ctrlp-smarttabs'
 Plug 'francoiscabrol/ranger.vim'
+Plug 'KabbAmine/zeavim.vim'
 
 " HTTP Requests
 Plug 'diepm/vim-rest-console'
@@ -64,9 +68,9 @@ Plug 'elzr/vim-json'
 Plug 'leafgarland/typescript-vim'
 Plug 'pangloss/vim-javascript'
 Plug 'mxw/vim-jsx'
-Plug 'peitalin/vim-jsx-typescript'
-" Plug 'ternjs/tern_for_vim', { 'do': 'npm install' }
-" Plug 'Quramy/tsuquyomi'
+" Plug 'peitalin/vim-jsx-typescript'
+Plug 'styled-components/vim-styled-components', { 'branch': 'main' }
+Plug 'jparise/vim-graphql'
 
 " Syntax: ReasonML
 Plug 'reasonml-editor/vim-reason'
