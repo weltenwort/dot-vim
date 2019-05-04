@@ -1,10 +1,9 @@
-Plug 'mxw/vim-jsx'
-Plug 'peitalin/vim-jsx-typescript'
+Plug 'tpope/vim-abolish'
 
 " function s:InitPlugin()
 " endfunction
 
-" augroup PlugJsx
+" augroup PlugAbolish
 "   autocmd!
 "   autocmd User PlugInit :call s:InitPlugin()
 " augroup END

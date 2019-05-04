@@ -1,10 +1,9 @@
-Plug 'mxw/vim-jsx'
-Plug 'peitalin/vim-jsx-typescript'
+Plug 'tbastos/vim-lua'
 
 " function s:InitPlugin()
 " endfunction
 
-" augroup PlugJsx
+" augroup PlugLua
 "   autocmd!
 "   autocmd User PlugInit :call s:InitPlugin()
 " augroup END

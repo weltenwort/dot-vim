@@ -1,5 +1,10 @@
 " vim: set foldmethod=marker foldlevel=1:
 
+" Debugging {{{
+" set verbosefile=~/vim-verbose.log
+" set verbose=13
+" }}}
+
 " Caches {{{
 set backupcopy=yes
 
@@ -28,10 +33,14 @@ set ttimeoutlen=0
 " }}}
 
 " Display {{{
+set cmdheight=2
+set hidden
 set ignorecase
 set list
 set number relativenumber
+set signcolumn=yes
 set splitbelow
+set updatetime=1000
 
 augroup numbertoggle
   autocmd!

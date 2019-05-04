@@ -1,10 +1,9 @@
-Plug 'moll/vim-bbye'
+Plug 'vim-scripts/utl.vim'
 
 function s:InitPlugin()
-  nnoremap <Leader>q :Bdelete<cr>
 endfunction
 
-augroup PlugBBye
+augroup PlugUtl
   autocmd!
   autocmd User PlugInit :call s:InitPlugin()
 augroup END

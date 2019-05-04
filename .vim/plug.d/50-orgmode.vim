@@ -1,10 +1,9 @@
-Plug 'moll/vim-bbye'
+Plug 'jceb/vim-orgmode'
 
 function s:InitPlugin()
-  nnoremap <Leader>q :Bdelete<cr>
 endfunction
 
-augroup PlugBBye
+augroup PlugOrgmode
   autocmd!
   autocmd User PlugInit :call s:InitPlugin()
 augroup END

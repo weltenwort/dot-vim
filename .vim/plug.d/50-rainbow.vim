@@ -1,10 +1,10 @@
-Plug 'moll/vim-bbye'
+Plug 'luochen1990/rainbow'
 
 function s:InitPlugin()
-  nnoremap <Leader>q :Bdelete<cr>
+  let g:rainbow_active = 1
 endfunction
 
-augroup PlugBBye
+augroup PlugRainbow
   autocmd!
   autocmd User PlugInit :call s:InitPlugin()
 augroup END

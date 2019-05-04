@@ -1,10 +1,10 @@
-Plug 'moll/vim-bbye'
+Plug 'junegunn/fzf'
+Plug 'junegunn/fzf.vim'
 
 function s:InitPlugin()
-  nnoremap <Leader>q :Bdelete<cr>
 endfunction
 
-augroup PlugBBye
+augroup PlugFzf
   autocmd!
   autocmd User PlugInit :call s:InitPlugin()
 augroup END

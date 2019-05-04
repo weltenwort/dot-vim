@@ -6,8 +6,15 @@ Plug 'autozimu/LanguageClient-neovim', {
 function s:InitPlugin()
   set hidden
   let g:LanguageClient_serverCommands = {
-    \ 'typescript': ['typescript-language-server', '--stdio'],
-    \ }
+  \     'typescript': ['typescript-language-server', '--stdio', '--tsserver-log-file', '/home/laeroth/tsserver.log', '--tsserver-log-verbosity', 'verbose'],
+  \ }
+  let g:LanguageClient_rootMarkers = {
+  \     'typescript': ['tsconfig.json'],
+  \ }
+  let g:LanguageClient_hoverPreview = 'Never'
+  let g:LanguageClient_loggingFile = '/home/laeroth/vim-language-client.log'
+  let g:LanguageClient_loggingLevel = 'INFO'
+  let g:LanguageClient_settingsPath = 'language-server-settings.json'
 endfunction
 
 augroup PlugLanguageClient
